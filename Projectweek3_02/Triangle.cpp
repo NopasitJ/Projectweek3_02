@@ -4,10 +4,13 @@ int main()
 {
 	long triangle = 0;
 	int i = 1;
+	int a;
+	printf("Enter divisors : ");
+	scanf_s("%d", &a);
 	while (1)
 	{
 		triangle += i;
-		if (Factors(triangle) > 500) //over 5 hundred
+		if (Factors(triangle) > a)
 		{
 			printf("%ld ", triangle);
 			break;
